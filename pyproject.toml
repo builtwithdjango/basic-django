@@ -2,7 +2,7 @@
 name = "basic-django"
 version = "0.1.0"
 description = ""
-authors = ["Rasul Kireev <rasul.kireev@guycarp.com>"]
+authors = ["Rasul Kireev <rasul@builtwithdjango.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
