@@ -7,6 +7,7 @@ authors = ["Rasul Kireev <rasul@builtwithdjango.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 Django = "^4.0.1"
+django-allauth = "^0.50.0"
 
 [tool.poetry.dev-dependencies]
 
