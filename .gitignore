@@ -2,6 +2,7 @@
 backup-dbs/
 media/
 *.sqlite3
+db.sqlite3
 
 # Javascript
 node_modules/
