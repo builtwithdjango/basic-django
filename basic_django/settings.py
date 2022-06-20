@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "allauth",
     "allauth.account",
+    "webpack_boilerplate",
     "allauth.socialaccount",
     "pages.apps.PagesConfig",
     "users.apps.UsersConfig",
@@ -123,6 +124,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR.joinpath("frontend/build"),
+]
+
+WEBPACK_LOADER = {
+    "MANIFEST_FILE": BASE_DIR.joinpath("frontend/build/manifest.json"),
+}
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

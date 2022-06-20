@@ -8,6 +8,7 @@ authors = ["Rasul Kireev <rasul@builtwithdjango.com>"]
 python = "^3.9"
 Django = "^4.0.1"
 django-allauth = "^0.50.0"
+python-webpack-boilerplate = "^1.0.0"
 
 [tool.poetry.dev-dependencies]
 
