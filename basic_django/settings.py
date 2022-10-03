@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "allauth",
     "allauth.account",
     "webpack_boilerplate",
+    "widget_tweaks",
     "allauth.socialaccount",
     "pages.apps.PagesConfig",
     "users.apps.UsersConfig",
@@ -158,3 +159,6 @@ ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_SESSION_REMEMBER = True
+ACCOUNT_FORMS = {
+  'signup': 'users.forms.CustomSignUpForm'
+}
