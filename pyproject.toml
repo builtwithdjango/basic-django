@@ -37,3 +37,6 @@ include = '\.pyi?$'
 [tool.djlint]
 profile="django"
 ignore = "H031"
+
+[tool.ruff]
+line-length = 120
