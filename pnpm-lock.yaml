@@ -14,6 +14,9 @@ importers:
       '@hotwired/stimulus-webpack-helpers':
         specifier: ^1.0.1
         version: 1.0.1(@hotwired/stimulus@3.2.2)
+      '@stimulus-components/animated-number':
+        specifier: ^5.0.0
+        version: 5.0.0(@hotwired/stimulus@3.2.2)
       bootstrap:
         specifier: ^5.1.3
         version: 5.3.3(@popperjs/core@2.11.8)
@@ -898,6 +901,11 @@ packages:
 
   '@popperjs/core@2.11.8':
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+
+  '@stimulus-components/animated-number@5.0.0':
+    resolution: {integrity: sha512-waOl3a/i5TJF8MYRiLSQqCTLYA0C20B2W7/UKbQOUKwnOGMrR0wHzNiJgfCveOE2Xl1WkeOlUjT0ntVgFXTyDA==}
+    peerDependencies:
+      '@hotwired/stimulus': ^3
 
   '@tailwindcss/forms@0.5.7':
     resolution: {integrity: sha512-QE7X69iQI+ZXwldE+rzasvbJiyV/ju1FGHH0Qn2W3FKbuYtqp8LKcy6iSw79fVUT5/Vvf+0XgLCeYVG+UV6hOw==}
@@ -4346,6 +4354,10 @@ snapshots:
     optional: true
 
   '@popperjs/core@2.11.8': {}
+
+  '@stimulus-components/animated-number@5.0.0(@hotwired/stimulus@3.2.2)':
+    dependencies:
+      '@hotwired/stimulus': 3.2.2
 
   '@tailwindcss/forms@0.5.7(tailwindcss@3.4.3)':
     dependencies:
