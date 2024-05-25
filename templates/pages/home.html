@@ -3,6 +3,17 @@
 {% block content %}
   <h1 class="mb-10 text-xl font-bold text-green-800">Helllloooooo!</h1>
 
+  <div data-controller="testing"></div>
+
+  <div
+    data-controller="animated-number"
+    data-animated-number-start-value="0"
+    data-animated-number-end-value="200"
+    data-animated-number-duration-value="3000"
+  >
+    0
+  </div>
+
   {% if user.is_authenticated %}
     <p>Username: {{ user.username }}</p>
     <p>Email: {{ user.email }}</p>
