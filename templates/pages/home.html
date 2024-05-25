@@ -3,6 +3,8 @@
 {% block content %}
   <h1 class="mb-10 text-xl font-bold text-green-800">Helllloooooo!</h1>
 
+  <div data-controller="testing"></div>
+
   {% if user.is_authenticated %}
     <p>Username: {{ user.username }}</p>
     <p>Email: {{ user.email }}</p>
