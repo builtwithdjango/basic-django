@@ -7,7 +7,7 @@ authors = ["Rasul Kireev <rasul@builtwithdjango.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 Django = "^4.0.1"
-django-allauth = "^0.50.0"
+django-allauth = {extras = ["socialaccount"], version = "^64.0.0"}
 python-webpack-boilerplate = "^1.0.0"
 django-widget-tweaks = "^1.4.12"
 
