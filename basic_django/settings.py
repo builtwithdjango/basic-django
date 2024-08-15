@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "webpack_boilerplate",
     "widget_tweaks",
     "allauth.socialaccount",
+    "allauth.socialaccount.providers.github",
     "pages.apps.PagesConfig",
     "users.apps.UsersConfig",
     "core.apps.CoreConfig",
@@ -57,6 +58,7 @@ MIDDLEWARE = [
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
+    "allauth.account.middleware.AccountMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
@@ -165,3 +167,14 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_SESSION_REMEMBER = True
 ACCOUNT_FORMS = {"signup": "users.forms.CustomSignUpForm"}
+
+
+SOCIALACCOUNT_PROVIDERS = {
+    "github": {
+        "VERIFIED_EMAIL": True,
+        "APP": {
+            "client_id": env("GITHUB_CLIENT_ID"),
+            "secret": env("GITHUB_CLIENT_SECRET"),
+        },
+    },
+}

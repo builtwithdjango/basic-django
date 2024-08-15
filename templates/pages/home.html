@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load socialaccount %}
 
 {% block content %}
   <h1 class="mb-10 text-xl font-bold text-green-800">Helllloooooo!</h1>
@@ -19,8 +20,9 @@
     <p>Email: {{ user.email }}</p>
     <a href="{% url 'account_logout' %}">Logout</a>
   {% else %}
-    <a href="{% url 'account_login' %}">Login</a>
-    <a href="{% url 'account_signup' %}">Signup</a>
+    <a class="p-2 text-blue-500 rounded-md border" href="{% url 'account_login' %}">Login</a>
+    <a class="p-2 text-blue-500 rounded-md border" href="{% url 'account_signup' %}">Signup</a>
+    <a class="p-2 text-blue-500 rounded-md border" href="{% provider_login_url 'github' %}">Sign Up with GitHub</a>
   {% endif %}
 
 {% endblock content %}
