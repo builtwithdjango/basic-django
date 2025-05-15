@@ -30,7 +30,7 @@ DEBUG = env("DEBUG")
 
 SECRET_KEY = env("SECRET_KEY")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -178,3 +178,5 @@ SOCIALACCOUNT_PROVIDERS = {
         },
     },
 }
+
+SUPER_IMPORTANT_SECRET = "This is a secret key"

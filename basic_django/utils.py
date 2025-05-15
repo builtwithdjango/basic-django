@@ -9,7 +9,7 @@ class DivErrorList(ErrorList):
         if not self:
             return ""
         return f"""
-            <div class="p-4 my-4 border border-red-600 border-solid rounded-md bg-red-50">
+            <div class="p-4 my-4 bg-red-50 rounded-md border border-red-600 border-solid">
               <div class="flex">
                 <div class="flex-shrink-0">
                   <!-- Heroicon name: solid/x-circle -->
@@ -23,3 +23,7 @@ class DivErrorList(ErrorList):
               </div>
             </div>
          """  # noqa: E501
+
+
+def BadFunctionName():
+    return "This is a bad function name"
